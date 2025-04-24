@@ -1,5 +1,3 @@
-/* styles.css */
-
 body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #ffffff;
@@ -20,19 +18,36 @@ header {
 }
 
 nav {
-    background-color: #ffcdd2;
+    background-color: #ffffff;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center; 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+nav ul li {
+    margin: 0 15px; 
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: rgb(0, 0, 0); 
 }
 
 section {
-    background-color: #fff9c4;
+    background-color: #82cbd8;
 }
 
 article {
-    background-color: #dcedc8;
+    background-color: #82cbd8;
 }
 
 aside {
-    background-color: #e1bee7;
+    background-color: #e64b4b;
     float: right;
     width: 25%;
 }

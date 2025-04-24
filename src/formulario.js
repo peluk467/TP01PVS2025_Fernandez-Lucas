@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const formulario = document.querySelector("form");
 
     formulario.addEventListener("submit", function(event) {
-        event.preventDefault(); // Evita que se recargue la página
+        event.preventDefault();
 
         const nombre = document.getElementById("nombre").value;
         const email = document.getElementById("email").value;
