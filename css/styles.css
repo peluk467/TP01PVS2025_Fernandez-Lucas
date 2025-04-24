@@ -1,0 +1,69 @@
+/* styles.css */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, section, article, aside, footer {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+header {
+    background-color: #b3e5fc;
+    text-align: center;
+}
+
+nav {
+    background-color: #ffcdd2;
+}
+
+section {
+    background-color: #fff9c4;
+}
+
+article {
+    background-color: #dcedc8;
+}
+
+aside {
+    background-color: #e1bee7;
+    float: right;
+    width: 25%;
+}
+
+footer {
+    background-color: #ffcc80;
+    text-align: center;
+}
+
+ul {
+    list-style-type: square;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+button {
+    background-color: #00796b;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
