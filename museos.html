@@ -1,45 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="css/styles.css">
-    <meta charset="UTF-8">
-    <title>Museos en Argentina</title>
+  <meta charset="UTF-8">
+  <title>Museos en Argentina</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Museos de Argentina</h1>
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="museos.html">Museos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
+  <header>
+    <h1>Museos de Argentina</h1>
+  </header>
 
-    <section>
-        <h2>Listado de museos</h2>
-        <ul>
-            <p>°Museo Nacional de Bellas Artes (Buenos Aires)</p>          
-            <p>El Museo Nacional de Bellas Artes es uno de los principales espacios culturales de Argentina y de América Latina. Fue inaugurado en 1896 y está ubicado en el barrio de Recoleta. Su misión es conservar, exhibir y difundir obras de arte tanto argentinas como internacionales.
-                Entre sus más de 12.000 piezas, se destacan pinturas de artistas como El Greco, Goya, Van Gogh, Monet, Manet, Degas y Rodin, además de grandes representantes del arte argentino como Prilidiano Pueyrredón, Benito Quinquela Martín y Antonio Berni.
-                La entrada es gratuita y el museo también ofrece visitas guiadas, exposiciones temporales, ciclos de cine y actividades educativas.</p>
-                <img src="images\1.jpg" alt="Argentina" width="400">
-                <p>°Museo de Arte Latinoamericano de Buenos Aires (MALBA)</p>
-            <p>El MALBA fue inaugurado en 2001 por la Fundación Costantini y se ha convertido en un referente para el arte latinoamericano moderno y contemporáneo. Su colección permanente incluye obras icónicas de artistas como Frida Kahlo, Diego Rivera, Wifredo Lam, Tarsila do Amaral, Antonio Berni, y Xul Solar.
-                El museo no solo alberga arte plástico, sino también cine, literatura, fotografía y diseño. Tiene una programación dinámica que incluye charlas, conferencias, proyecciones de películas y exposiciones temporales internacionales.
-                El edificio en sí también es un punto de atracción, por su arquitectura moderna y su diseño interior.</p>
-                <img src="images\2.jpg" alt="Argentina" width="400">
-                <p>°Museo de Ciencias Naturales Bernardino Rivadavia (Buenos Aires)</p>
-            <p>Ubicado en el barrio de Caballito, este museo fue fundado en 1823 y es uno de los más antiguos de América. Lleva el nombre del naturalista argentino Bernardino Rivadavia.
-                Su colección es amplísima y se especializa en paleontología, zoología, botánica, ecología y geología. Uno de sus mayores atractivos es la exhibición de esqueletos de dinosaurios argentinos, como el Giganotosaurus carolinii, uno de los carnívoros más grandes que existió.
-                Además, cuenta con terrarios vivos, una sala de aves, insectos, rocas y minerales. Es ideal para visitas escolares, familias y amantes de la ciencia y la naturaleza.</p>
-                <img src="images\3.jpg" alt="Argentina" width="400">
-            </section>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="museos.html">Museos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
 
-    <footer>
-        <p>© 2025 Cultura Argentina</p>
-    </footer>
+  <main>
+    <section class="fade-in">
+      <h2>Listado de Museos</h2>
+
+      <article>
+        <h3>Museo Nacional de Bellas Artes</h3>
+        <p>Inaugurado en 1896, alberga más de 12.000 piezas de artistas como Van Gogh, Monet, Berni y más. Entrada gratuita, en Recoleta, Buenos Aires.</p>
+        <img src="images/1.jpg" alt="Museo Nacional de Bellas Artes">
+      </article>
+
+      <article>
+        <h3>MALBA</h3>
+        <p>Fundado en 2001, es un museo clave del arte moderno y contemporáneo latinoamericano. Exhibe obras de Kahlo, Rivera, Xul Solar, entre otros.</p>
+        <img src="images/2.jpg" alt="MALBA">
+      </article>
+
+      <article>
+        <h3>Museo de Ciencias Naturales</h3>
+        <p>Ubicado en Caballito, fue fundado en 1823. Exhibe fósiles, dinosaurios, insectos y minerales. Ideal para visitas familiares y educativas.</p>
+        <img src="images/3.jpg" alt="Museo de Ciencias Naturales">
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Cultura Argentina - Lucas Fernandez</p>
+  </footer>
+
+  <button id="scrollTopBtn" title="Volver arriba">↑</button>
+
+  <script>
+    const scrollBtn = document.getElementById("scrollTopBtn");
+    window.onscroll = function () {
+      scrollBtn.style.display = (document.documentElement.scrollTop > 200) ? "block" : "none";
+    };
+    scrollBtn.onclick = function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+
 </body>
 </html>
